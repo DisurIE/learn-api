@@ -5,9 +5,9 @@ import (
 	"learn-api/internal/config"
 )
 
-func MustLoad() {
+func main() {
 
-	cfg := config.Load()
+	cfg := config.MustLoad()
 
 	fmt.Println(cfg)
 
