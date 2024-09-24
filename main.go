@@ -1,12 +1,13 @@
-package url_shortener
+package main
 
 import (
 	"fmt"
 	"learn-api/internal/config"
 )
 
-func main() {
-	cfg := config.MustLoad()
+func MustLoad() {
+
+	cfg := config.Load()
 
 	fmt.Println(cfg)
 
